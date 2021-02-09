@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Show</title>
+</head>
+<body>
+<h3><p th:text="${store.getName()}">VALUE</p></h3>
+<p th:text="${'Adress: ' + store.getAdress()}">VALUE</p>
+<p th:text="${'id: ' + store.getId()}">VALUE</p>
+<p th:text="${'Phone Number: ' + store.getPhonenumber()}">VALUE</p>
+
+
+<form th:action="@{/allstores/{id}/edit(id=${store.getId()})}">
+    <input type="submit" value="Edit"/>
+    <br/>
+</form>
+
+<form th:action="@{/allstores/{id}(id=${store.getId()})}" th:method="DELETE">
+    <input type="submit" value="Delete"/>
+    <br/>
+</form>
+
+<form>
+    <input type="button" onclick="history.back();" value="Back"/>
+</form>
+</body>
+</html>
+<td>
+
+<td/>

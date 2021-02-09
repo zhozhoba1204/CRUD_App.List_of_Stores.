@@ -4,5 +4,5 @@
 - Maven
 - Spring
 - Hibernate
-- Postgresql
+- PostgreSQL
 - Html
